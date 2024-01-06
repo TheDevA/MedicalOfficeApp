@@ -11,6 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "node-fetch": "^3.2.6"
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "modules": "^0.4.0",
+    "mongodb": "^6.3.0",
+    "node-fetch": "^3.2.6",
+    "pdfkit": "^0.14.0",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.2"
   }
 }

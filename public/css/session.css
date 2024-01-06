@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  background-color:#FFECD6;
+}
+
+.my-custom-scrollbar {
+position: relative;
+max-height: 400px;
+min-width:40%;
+overflow-y: scroll;
+}
+.table-wrapper-scroll-y {
+display: block;
+}

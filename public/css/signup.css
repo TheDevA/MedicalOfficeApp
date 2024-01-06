@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+  background-color:#DC84F3;
+}
+
+.form-signin {
+  max-width: 1000px;
+  padding: 1rem;
+}
+label{
+  font-weight:bold;
+}

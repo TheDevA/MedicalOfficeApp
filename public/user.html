@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.socket.io/4.7.2/socket.io.min.js"
+      integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/user.css" />
+    <title>User</title>
+  </head>
+  <body class="d-flex justify-content-center py-4">
+    <main class="w-100 m-auto p-4">
+      <p class="fs-2 text-center fw-bolder" id="type">Welcome User</p>
+      <div class="d-flex flex-column">
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">Name:</p>
+          <p class="fs-5 fw-normal ps-1" id="name">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">Last Name:</p>
+          <p class="fs-5 fw-normal ps-1" id="lastname">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">uuid:</p>
+          <p class="fs-5 fw-normal ps-1" id="uuid">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">Email:</p>
+          <p class="fs-5 fw-normal ps-1" id="email">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">Address:</p>
+          <p class="fs-5 fw-normal ps-1" id="address">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">City:</p>
+          <p class="fs-5 fw-normal ps-1" id="city">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1">
+          <p class="fs-5 fw-bold">State:</p>
+          <p class="fs-5 fw-normal ps-1" id="state">Loading...</p>
+        </div>
+        <div class="d-flex m-0 p-1 justify-content-center">
+          <button type="button" id="downloadDoc" class="btn btn-info fw-bold actionBtn">
+            Download Documents
+          </button>
+          <button type="button" class="btn btn-info ms-3 fw-bold actionBtn" id="session">
+            Join a session
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/js/user.js"></script>
+  </body>
+</html>

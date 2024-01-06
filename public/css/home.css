@@ -1,0 +1,15 @@
+html,
+body {
+  height: 100%;
+  background-color:#DC84F3;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+.signupA{
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+}
