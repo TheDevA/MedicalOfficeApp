@@ -4,7 +4,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 // declaring static var for database 
 const MAIN_COLLECTION = "users";
 const MAIN_DB = "main_DB";
-const PASS = process.env.PASS
+const PASS = process.env["PASS"]
 const uri =
   `mongodb+srv://admin:${PASS}@cluster0.8whrnci.mongodb.net/?retryWrites=true&w=majority`;
 
@@ -30,6 +30,8 @@ async function find(query, opt,opt2) {
     return user;
   } catch (e) {
     throw e;
+  }finally {
+    await client.close();
   }
 }
 
@@ -50,6 +52,8 @@ async function findAll(query, opt,opt2) {
     return docs;
   } catch (e) {
     throw e;
+  }finally {
+    await client.close();
   }
 }
 
@@ -65,6 +69,8 @@ async function insertOne(userData, opt) {
     return user;
   } catch (e) {
     throw e;
+  }finally {
+    await client.close();
   }
 }
 
@@ -81,6 +87,8 @@ async function updateOne(filter, userData, upsert, opt) {
     return user;
   } catch (e) {
     throw e;
+  }finally {
+    await client.close();
   }
 }
 
@@ -97,6 +105,8 @@ async function deleteOne(query, opt,opt2) {
     return user;
   } catch (e) {
     throw e;
+  }finally {
+    await client.close();
   }
 }
 
