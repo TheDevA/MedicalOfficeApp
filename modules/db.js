@@ -30,8 +30,6 @@ async function find(query, opt,opt2) {
     return user;
   } catch (e) {
     throw e;
-  }finally {
-    await client.close();
   }
 }
 
@@ -52,8 +50,6 @@ async function findAll(query, opt,opt2) {
     return docs;
   } catch (e) {
     throw e;
-  }finally {
-    await client.close();
   }
 }
 
@@ -69,8 +65,6 @@ async function insertOne(userData, opt) {
     return user;
   } catch (e) {
     throw e;
-  }finally {
-    await client.close();
   }
 }
 
@@ -87,8 +81,6 @@ async function updateOne(filter, userData, upsert, opt) {
     return user;
   } catch (e) {
     throw e;
-  }finally {
-    await client.close();
   }
 }
 
@@ -105,8 +97,6 @@ async function deleteOne(query, opt,opt2) {
     return user;
   } catch (e) {
     throw e;
-  }finally {
-    await client.close();
   }
 }
 
